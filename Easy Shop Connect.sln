@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServices", "{57250DE1-5F90-4998-B40B-A766056B4F75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoucherApi", "VoucherApi\VoucherApi.csproj", "{561FCA39-092B-4835-BE0F-61D588124972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoucherApi", "VoucherApi\VoucherApi.csproj", "{561FCA39-092B-4835-BE0F-61D588124972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyShopConnect .Web", "EasyShopConnect .Web\EasyShopConnect .Web.csproj", "{C5DD2196-80AB-4A8E-8CB7-C334234814EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +25,17 @@ Global
 		{561FCA39-092B-4835-BE0F-61D588124972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{561FCA39-092B-4835-BE0F-61D588124972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{561FCA39-092B-4835-BE0F-61D588124972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DD2196-80AB-4A8E-8CB7-C334234814EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DD2196-80AB-4A8E-8CB7-C334234814EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DD2196-80AB-4A8E-8CB7-C334234814EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DD2196-80AB-4A8E-8CB7-C334234814EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{561FCA39-092B-4835-BE0F-61D588124972} = {57250DE1-5F90-4998-B40B-A766056B4F75}
+		{C5DD2196-80AB-4A8E-8CB7-C334234814EC} = {420B5F1E-F2AD-46CC-BF2C-22FB621BBF04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8012DA0-1348-40A5-8433-F363AB1E94D4}
