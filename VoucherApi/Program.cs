@@ -20,7 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddLogging(builder =>
 {
-    builder.AddConsole(); // Add console logging
+    builder.AddConsole(); // Add console loggingZ
     builder.AddDebug();   // Add debug output window logging
     
 });
@@ -45,21 +45,21 @@ app.UseAuthorization();
 app.MapControllers();
 
 //invoke the ApplyMigration method into pipeline
-ApplyMigration();
+//ApplyMigration();
 
 app.Run();
 
 
 //Automatically apply all the pending migrations to the Database
-void ApplyMigration()
-{
-    using (var scope = app.Services.CreateScope())
-    {
-        var _db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+//void ApplyMigration()
+//{
+//    using (var scope = app.Services.CreateScope())
+//    {
+//        var _db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-        if (_db.Database.GetPendingMigrations().Count() > 0)
-        {
-            _db.Database.Migrate();
-        }
-    }
-}
+//        if (_db.Database.GetPendingMigrations().Count() > 0)
+//        {
+//            _db.Database.Migrate();
+//        }
+//    }
+//}
