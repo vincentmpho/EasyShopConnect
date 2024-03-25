@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrondEnd", "FrondEnd", "{420B5F1E-F2AD-46CC-BF2C-22FB621BBF04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GateWay", "GateWay", "{3EFF1D56-3793-4280-8862-BC5C77E6B038}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{7E0C2987-43E4-461A-8183-8D4030C096CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServices", "{57250DE1-5F90-4998-B40B-A766056B4F75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoucherApi", "VoucherApi\VoucherApi.csproj", "{561FCA39-092B-4835-BE0F-61D588124972}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{561FCA39-092B-4835-BE0F-61D588124972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561FCA39-092B-4835-BE0F-61D588124972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561FCA39-092B-4835-BE0F-61D588124972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561FCA39-092B-4835-BE0F-61D588124972}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{561FCA39-092B-4835-BE0F-61D588124972} = {57250DE1-5F90-4998-B40B-A766056B4F75}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8012DA0-1348-40A5-8433-F363AB1E94D4}
+	EndGlobalSection
+EndGlobal
