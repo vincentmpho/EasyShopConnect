@@ -1,4 +1,5 @@
 ﻿using EasyShopConnect_.Web.Models.DTOs;
+using EasyShopConnect_.Web.Models.Utility;
 using EasyShopConnect_.Web.Services.Interface;
 
 namespace EasyShopConnect_.Web.Services
@@ -11,34 +12,60 @@ namespace EasyShopConnect_.Web.Services
         {
             _baseService = baseService;
         }
-        public Task<ResponseDto?> CreateVoucherAsync(VoucherDto voucherDto)
+        public async Task<ResponseDto?> CreateVoucherAsync(VoucherDto voucherDto)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = StaticDetails.ApiType.POST,
+                Data = voucherDto,
+                Url = StaticDetails.VoucherAPIBase + "api/voucher"
+            });
         }
 
-        public Task<ResponseDto?> DeleteVoucherAsync(int id)
+        public async Task<ResponseDto?> DeleteVoucherAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = StaticDetails.ApiType.DELETE,
+                Url = StaticDetails.VoucherAPIBase + "api/voucher/" + id
+            });
         }
 
-        public Task<ResponseDto?> GetAllVoucherAsync()
+        public async Task<ResponseDto?> GetAllVoucherAsync()
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = StaticDetails.ApiType.GET,
+                Url = StaticDetails.VoucherAPIBase + "api/voucher"
+            });
         }
 
-        public Task<ResponseDto?> GetVoucherAsync(string voucherCode)
+        public async Task<ResponseDto?> GetVoucherAsync(string voucherCode)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = StaticDetails.ApiType.GET,
+                Url = StaticDetails.VoucherAPIBase + "api/voucher/GetByCode/"+voucherCode
+            });
         }
 
-        public Task<ResponseDto?> GetVoucherByIdAsync(int id)
+        public async Task<ResponseDto?> GetVoucherByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = StaticDetails.ApiType.GET,
+                Url = StaticDetails.VoucherAPIBase + "api/voucher/" + id
+            });
         }
 
-        public Task<ResponseDto?> UpdateVoucherAsync(VoucherDto voucherDto)
+        public  async Task<ResponseDto?> UpdateVoucherAsync(VoucherDto voucherDto)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = StaticDetails.ApiType.PUT,
+                Data = voucherDto,
+                Url = StaticDetails.VoucherAPIBase + "api/voucher"
+            });
         }
     }
 }

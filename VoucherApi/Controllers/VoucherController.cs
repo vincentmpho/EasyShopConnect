@@ -104,16 +104,6 @@ namespace VoucherApi.Controllers
             }
         }
 
-        // Helper method to log errors and set response properties
-        private void LogErrorAndSetResponse(Exception ex, ResponseDto response, string errorMessage)
-        {
-            // Set response properties based on the exception
-            response.IsSuccess = false;
-            response.Message = ex.Message;
-            // Log the error
-            _logger.LogError(ex, errorMessage);
-        }
-
         [HttpGet]
         [Route("GetByCode/{code}")]
         public async Task<ActionResult<ResponseDto>> GetVoucherByCode(string code)
@@ -259,7 +249,15 @@ namespace VoucherApi.Controllers
             }
         }
 
-
+        // Helper method to log errors and set response properties
+        private void LogErrorAndSetResponse(Exception ex, ResponseDto response, string errorMessage)
+        {
+            // Set response properties based on the exception
+            response.IsSuccess = false;
+            response.Message = ex.Message;
+            // Log the error
+            _logger.LogError(ex, errorMessage);
+        }
     }
 
 }

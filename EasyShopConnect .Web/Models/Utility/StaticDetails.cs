@@ -2,6 +2,7 @@
 {
     public class StaticDetails
     {
+        public static string VoucherAPIBase {  get; set; }
         public enum ApiType
         {
             GET,
